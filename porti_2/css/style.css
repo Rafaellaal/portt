@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(211, 195, 250);
+    height: 100vh;
+}
+header{
+    width: 100%;
+    background-color: rgb(192, 171, 248);
+    display: flex;
+}
+
+li{
+    display: inline-block; 
+    margin-top: 4%;
+    margin-right: 300px;
+    padding: 25px;
+}
+
+ img{
+    width: 30%;
+    padding: 5px;
+    display: inline-block;
+}
+.botao{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    background-color: rgb(131, 109, 253);
+    padding: 15px 18px;
+    letter-spacing: 2px;
+    transition: .4s;
+    clip-path: polygon(88% 0%, 100% 50%, 88% 100%, 0% 100%, 9% 50%, 0% 0%);
+    
+}
+.botao:hover{
+    color: rgb(131, 109, 253);
+    background-color:  rgb(253, 253, 253);
+    letter-spacing: 4px;
+    clip-path: polygon(100% 0%, 93% 47%, 100% 100%,8% 100%,0% 50%, 8% 0%);
+}
+.fl{
+    display: flex;
+    margin: 10px;
+    padding: 0 100px;
+}
+
+
+/*interface*/
+#topo{
+    padding: 200px 4%; 
+}
+#topo .fl{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 70%;
+}
+
+.texto h1{
+    color:rgb(146, 34, 252);
+    font-size: 60px;
+}
+#topo .texto p{
+    margin: 40px 0;
+    font-size: 25px;
+    color: rgb(222, 113, 255);
+}
+span{
+    color:rgb(75, 3, 143);;
+}
+
+.img img{
+    position: relative;
+    width: 22vw;
+    border-radius: 50%;
+    box-shadow: 0 0 30px  rgb(131, 42, 204);
+    cursor: pointer;
+    transition: 0.09 ease-in-out;
+}
+.img img:hover{
+    box-shadow: 0 0 60px rgb(131, 42, 204), 0 0 30px rgb(131, 42, 204) ;
+}
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(146, 34, 252);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.03 ease-in-out;
+}
+.contato button:hover{
+    box-shadow: 0 0 25px rgb(146, 34, 252);
+}
+#topo .img img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*sobre*/
+
+#sobre{
+    padding: 40px 4%;
+    
+}
+#sobre .inter{
+    align-items: center;
+    gap: 90px;
+}
+
+#sobre span {
+    display: block;
+}
+#sobre .txt p{
+    font-size: 25px;
+    color: rgb(222, 113, 255);
+    margin: 30px 0;
+}
+#sobre h2{
+    color:rgb(146, 34, 252);
+    font-size: 50px;
+}
+.redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;    
+    background-color: rgb(146, 34, 252);
+    margin: 0 5px;
+    transition: 0.03 ease-in-out;
+}
+.redes button:hover{
+    box-shadow: 0 0 25px rgb(146, 34, 252);
+}
+.image img{
+    position: relative;
+    width: 22vw;
+    border-radius: 10%;
+    box-shadow: 0 0 20px  rgb(131, 42, 204);
+    cursor: pointer;
+    transition: 0.09 ease-in-out;
+    cursor:pointer;
+}
+.image img:hover{
+    box-shadow: 0 0 20px rgb(131, 42, 204), 0 0 20px rgb(131, 42, 204) ;
+}
+
+.inter{
+    display: flex;
+    margin: 10px;
+    padding: 0 100px;
+}
+#sobre .image img{
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+ /*footer*/
+
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 30px 5px rgb(131, 42, 204);
+    margin-top: 300px;
+}
+footer .flex{
+    justify-content: space-between;
+    display: flex;
+}
+footer img{
+    width: 150px;
+    cursor: pointer;
+}
+footer .fll{
+    padding: 20px 0;
+    border-bottom: 2px solid rgb(105, 22, 199);
+}
+footer .fll p svg{
+    color: rgb(154, 3, 255);
+    
+}

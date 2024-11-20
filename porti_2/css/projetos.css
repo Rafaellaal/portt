@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(211, 195, 250);
+    height: 100vh;
+}
+header{
+    width: 100%;
+    background-color: rgb(192, 171, 248);
+    display: flex;
+}
+
+li{
+    display: inline-block; 
+    margin-top: 4%;
+    margin-right: 300px;
+    padding: 25px;
+}
+
+ img{
+    width: 30%;
+    padding: 5px;
+    display: inline-block;
+}
+.botao{
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    background-color: rgb(131, 109, 253);
+    padding: 15px 18px;
+    letter-spacing: 2px;
+    transition: .4s;
+    clip-path: polygon(88% 0%, 100% 50%, 88% 100%, 0% 100%, 9% 50%, 0% 0%);
+    
+}
+.botao:hover{
+    color: rgb(131, 109, 253);
+    background-color:  rgb(253, 253, 253);
+    letter-spacing: 4px;
+    clip-path: polygon(100% 0%, 93% 47%, 100% 100%,8% 100%,0% 50%, 8% 0%);
+}
+.fl{
+    display: flex;
+    margin: 10px;
+    padding: 0 100px;
+}
+
+/* portfolio */
+
+.interface{
+    padding: 90px 4%;
+}
+.fotos{
+    display: flex;
+}
+.interface .fotos{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin: 40px;
+}
+.fts{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(179, 39, 235);
+    cursor: pointer;
+    
+}
+h2{
+    color: rgb(95, 11, 173);
+    font-weight: 600;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Ga Maamli", sans-serif;
+}
+span{
+    color: rgb(143, 23, 255);
+}
+.fts {
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin: 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 300;
+    color:aliceblue;
+    opacity: 0;
+    transition: .4s;
+}
+.overlay:hover{
+    opacity: 1;
+}
